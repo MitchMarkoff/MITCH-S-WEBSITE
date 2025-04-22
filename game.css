@@ -1,0 +1,111 @@
+/* Reset + Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #c3dafe, #e0e7ff);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Layout */
+  .game-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .game-card {
+    background: #ffffffee;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Header */
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+  }
+  
+  .turn-text {
+    font-size: 1rem;
+    color: #475569;
+    margin-bottom: 20px;
+  }
+  
+  /* Board */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f5f9;
+    border-radius: 12px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .cell:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .cell.X {
+    color: #ef4444;
+  }
+  
+  .cell.O {
+    color: #3b82f6;
+  }
+  
+  /* Win Message */
+  .message {
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .message h2 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+  
+  /* Button */
+  #restartButton {
+    background: #3b82f6;
+    color: #fff;
+    padding: 10px 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #restartButton:hover {
+    background: #2563eb;
+  }
+  
